@@ -1,0 +1,24 @@
+.restaurant {
+    padding-top: 80px;
+    min-height: 300px;
+    &__wrapper {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+    &__img {
+        margin-top: 40px;
+        height: 600px;
+        background: url('/img/metallist.webp') no-repeat 10% 70%/cover fixed;
+    }
+    address {
+        font-family: "Great Vibes", cursive;
+        font-weight: 400; 
+        text-transform: none;
+        font-size: clamp(26px, 4vw, 44px);
+        text-wrap: pretty;
+        margin-top: 10px;
+        text-decoration: none;
+    }
+}
