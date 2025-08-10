@@ -129,23 +129,14 @@ window.onload = function () {
     }
   }
 
-  // Preloader
-let loaded = false; // флаг, чтобы код выполнился один раз
-
-function markLoaded() {
-  if (!loaded) {
-    loaded = true;
-    document.getElementById('loading-screen').classList.add('loaded');
-    document.body.classList.add('loaded');
-    document.body.style.overflow = 'auto';
-  }
-}
-
-const img1 = new Image();
-img1.src = 'img/bg_6.webp';
-img1.onload = markLoaded;
-
-const img2 = new Image();
-img2.src = 'img/bg_5.webp';
-img2.onload = markLoaded;
+ // Preloader
+ const img = new Image();
+ img.src = 'img/main-photo.png'; // путь к вашему фону
+ 
+ img.onload = () => {
+   // Когда фон загрузился — убираем затемнение
+   document.getElementById('loading-screen').classList.add('loaded');
+   document.body.classList.add('loaded');
+   document.body.style.overflow = 'auto'; // возвращаем прокрутку
+ };
 
