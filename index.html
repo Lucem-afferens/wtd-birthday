@@ -150,7 +150,9 @@
         </div>
         <div class="path__map">
             <div class="map-container" ontouchstart="activateMap(this)" onmouseleave="deactivateMap(this)">
-              <div class="map-overlay" onclick="deactivateOverlay(this)"></div>
+              <div class="map-overlay" onclick="deactivateOverlay(this)">
+                <span class="map-overlay__text">Нажмите на карту для активации масштабирования</span>
+              </div>
               <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab014247ff9e620f9af33b497963e194f012212b73163e66fec7e4a24148603f7&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
             </div>
         </div>
